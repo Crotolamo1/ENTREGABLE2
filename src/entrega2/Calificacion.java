@@ -10,29 +10,29 @@ public class Calificacion {
     private Servicio Service=null;
     
     public Calificacion(float score, String description, Conductor driver, Pasajero rider, Servicio service){
-        this.SetScore(score);
-        this.SetDescription(description);
-        this.SetDriver(driver);
-        this.SetRider(rider);
-        this.SetService(service);
+        this.setScore(score);
+        this.setDescription(description);
+        this.setDriver(driver);
+        this.setRider(rider);
+        this.setService(service);
     }
     
-    public Calificacion(float score, String description, Conductor driver, Pasajero rider, Servicio service){
-        this.SetScore(score);
-        this.SetDescription(description);
-        this.SetDriver(driver);
-        this.SetRider(rider);
+    public Calificacion(float score, String description, Conductor driver, Pasajero rider){
+        this.setScore(score);
+        this.setDescription(description);
+        this.setDriver(driver);
+        this.setRider(rider);
     }
     
-    public void SetScore(float score){this.Score=score;}
-    public void SetDescription(String description){this.Description=description;}
-    public void SetDriver(Conductor driver){this.Driver=driver;}
-    public void SetRider(Pasajero rider){this.Rider=rider;}
-    public void SetService(Servicio service){this.Service=service;}
+    public void setScore(float score){this.Score=score;}
+    public void setDescription(String description){this.Description=description;}
+    public void setDriver(Conductor driver){this.Driver=driver;}
+    public void setRider(Pasajero rider){this.Rider=rider;}
+    public void setService(Servicio service){this.Service=service;}
     
-    public float GetScore(){return this.Score;}
-    public String GetDescription(){return this.Description;}
-    public Conductor GetDriver(){return this.Driver;}
-    public Pasajero GetRider(){return this.Rider;}
-    public Servicio GetService(){return this.Service;}
+    public float getScore(){return this.Score;}
+    public String getDescription(){return this.Description;}
+    public Conductor getDriver(){return this.Driver;}
+    public Pasajero getRider(){return this.Rider;}
+    public Servicio getService(){return this.Service;}
 }

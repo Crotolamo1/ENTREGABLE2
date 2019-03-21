@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Persona {
     
-    List<Persona> PeopleList= new ArrayList<Persona>();
+    static List<Persona> PeopleList= new ArrayList<Persona>();
     
     private String Email;
     private String Password;
@@ -14,19 +14,20 @@ public class Persona {
     private String CellPhone;
     
     public Persona(String email, String password, String name, String cellphone){
-        this.SetEmail(email);
-        this.SetPassword(password);
-        this.SetName(name);
-        this.SetCellPhone(cellphone);
+        this.setEmail(email);
+        this.setPassword(password);
+        this.setName(name);
+        this.setCellPhone(cellphone);
+        Persona.PeopleList.add(this);
     }
     
-    public void SetEmail(String email){this.Email=email;}
-    public void SetPassword(String password){this.Password=password;}
-    public void SetName(String name){this.Name=name;}
-    public void SetCellPhone(String cellphone){this.CellPhone=cellphone;}
+    public void setEmail(String email){this.Email=email;}
+    public void setPassword(String password){this.Password=password;}
+    public void setName(String name){this.Name=name;}
+    public void setCellPhone(String cellphone){this.CellPhone=cellphone;}
     
-    public String GetEmail(){return this.Email;}
-    public String GetPassword(){return this.Password;}
-    public String GetName(){return this.Name;}
-    public String GetCellPhone(){return this.CellPhone;}
+    public String getEmail(){return this.Email;}
+    public String getPassword(){return this.Password;}
+    public String getName(){return this.Name;}
+    public String getCellPhone(){return this.CellPhone;}
 }

@@ -15,6 +15,7 @@ public class ENTREGA2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        Persona a=new Persona("juantoro", "hola", "juan", "312");
+        System.out.println(Persona.PeopleList.get(0).GetName());
     }
-    
 }

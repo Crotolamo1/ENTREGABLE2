@@ -6,24 +6,24 @@ import java.util.List;
 
 public class Comentario {
     
-    List<Comentario> CommentsList = new ArrayList<Comentario>();
+    static List<Comentario> CommentsList = new ArrayList<Comentario>();
     
     private String Description;
     private Persona Person;
     private String Date;
     
     public Comentario(String description, Persona person, String date){
-        this.SetDescription(description);
-        this.SetPerson(person);
-        this.SetDate(date);
+        this.setDescription(description);
+        this.setPerson(person);
+        this.setDate(date);
     }
     
-    public void SetDescription(String description){this.Description=description;}
-    public void SetPerson(Persona person){this.Person=person;}
-    public void SetDate(String date){this.Date=date;}
+    public void setDescription(String description){this.Description=description;}
+    public void setPerson(Persona person){this.Person=person;}
+    public void setDate(String date){this.Date=date;}
     
-    public String GetDescription(){return this.Description;}
-    public Persona GetPerson(){return this.Person;}
-    public String GetDate(){return this.Date;}
+    public String getDescription(){return this.Description;}
+    public Persona getPerson(){return this.Person;}
+    public String getDate(){return this.Date;}
     
 }
